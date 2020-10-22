@@ -1,0 +1,127 @@
+@import url(../css/normalize.css);
+html,
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: #2a2a2a;
+  color: #fafafa;
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  color: #fafafa; }
+  a:hover,
+  a :active {
+    color: #0079d3; }
+
+.grid-wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px; }
+
+nav {
+  background: #3a3a3a; }
+
+.nav-tools {
+  background: saddlebrown;
+  grid-column: 1 / 4; }
+
+header {
+  background: darkgreen;
+  grid-column: 1 / 4; }
+
+@media screen and (max-width: 960px) {
+  aside {
+    display: none; } }
+aside .aside-left {
+  grid-column: 1 / 1; }
+aside .aside-right {
+  grid-column: 3 / 1; }
+
+main {
+  grid-column: 2 / 2; }
+  @media screen and (max-width: 960px) {
+    main {
+      grid-column: 1 / 4; } }
+
+article {
+  background: #3a3a3a; }
+
+/* POSTS */
+.post {
+  padding: 1em;
+  margin-bottom: 1em; }
+
+.post-header {
+  display: flex; }
+
+.post-user {
+  display: flex;
+  font-weight: 300; }
+  .post-user div {
+    margin: 0 0.2em; }
+  .post-user .subname {
+    font-weight: 600; }
+
+.award-gold {
+  color: goldenrod; }
+
+.award-silver {
+  color: silver; }
+
+.award-bronze {
+  color: #885923; }
+
+.post-points {
+  text-align: center; }
+  .post-points .upvote,
+  .post-points .downvote {
+    cursor: pointer; }
+
+.post-image {
+  margin: 1em 0; }
+
+.feedback {
+  display: flex;
+  justify-content: space-between; }
+  .feedback .post-feedback {
+    display: flex; }
+    .feedback .post-feedback ion-icon {
+      margin-right: 0.3em; }
+  .feedback .post-admin {
+    display: flex; }
+
+.feedback-btn {
+  margin: 0 0.6em;
+  padding: 0.3em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fafafa;
+  cursor: pointer; }
+
+.tag {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  font-size: smaller;
+  font-weight: bolder; }
+  .tag.tag-oc {
+    background: #fafafa;
+    color: #2a2a2a; }
+  .tag.tag-funny {
+    background: #0079d3; }
+  .tag.tag-nsfw {
+    background: #ff4500; }
+
+/* tables */
+table {
+  width: 100%; }
+  table td {
+    padding: 1em;
+    white-space: pre; }
