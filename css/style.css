@@ -121,7 +121,7 @@ article {
 
 /* tables */
 table {
-  width: 100%; }
+  width: 100%;
+  table-layout: auto; }
   table td {
-    padding: 1em;
-    white-space: pre; }
+    padding: 1em; }

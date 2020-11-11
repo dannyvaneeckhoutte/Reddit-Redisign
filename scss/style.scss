@@ -165,8 +165,8 @@ article {
 
 table {
 	width: 100%;
+	table-layout: auto;
 	& td {
 		padding: 1em;
-		white-space: pre;
 	}
 }
