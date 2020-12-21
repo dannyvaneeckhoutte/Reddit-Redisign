@@ -26,7 +26,8 @@ nav {
 
 .nav-tools {
   background: saddlebrown;
-  grid-column: 1 / 4; }
+  grid-column: 1 / 4;
+  display: flex; }
 
 header {
   background: darkgreen;
