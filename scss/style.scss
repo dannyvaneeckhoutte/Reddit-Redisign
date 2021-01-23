@@ -41,9 +41,15 @@ nav {
 }
 
 .nav-tools {
-  background: saddlebrown;
+  background: $gray-med;
   grid-column: 1 / 4;
   display: flex;
+  justify-content: space-between;
+
+  & .create-post {
+    display: flex;
+    border: 2px solid $accent-blue;
+  }
 }
 
 header {
@@ -170,4 +176,38 @@ table {
   & td {
     padding: 1em;
   }
+}
+
+/* Buttons */
+
+button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &.btn:focus {
+    outline: none;
+  }
+  &.btn-create-txt {
+    padding: 0.4em 1em;
+    background-color: $accent-blue;
+    color: $white;
+  }
+  &.btn-create-img,
+  &.btn-create-link,
+  &.btn-create-poll {
+    background-color: $gray-light;
+    color: $gray-med;
+  }
+}
+
+/* Icons */
+ion-icon {
+  margin: 0;
+  padding: 0;
 }

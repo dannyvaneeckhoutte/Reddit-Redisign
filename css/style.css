@@ -25,9 +25,13 @@ nav {
   background: #3a3a3a; }
 
 .nav-tools {
-  background: saddlebrown;
+  background: #454545;
   grid-column: 1 / 4;
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
+  .nav-tools .create-post {
+    display: flex;
+    border: 2px solid #0079d3; }
 
 header {
   background: darkgreen;
@@ -126,3 +130,27 @@ table {
   table-layout: auto; }
   table td {
     padding: 1em; }
+
+/* Buttons */
+button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  border: none;
+  cursor: pointer; }
+
+.btn.btn:focus {
+  outline: none; }
+.btn.btn-create-txt {
+  padding: 0.4em 1em;
+  background-color: #0079d3;
+  color: #fafafa; }
+.btn.btn-create-img, .btn.btn-create-link, .btn.btn-create-poll {
+  background-color: #bec0c2;
+  color: #454545; }
+
+/* Icons */
+ion-icon {
+  margin: 0;
+  padding: 0; }
